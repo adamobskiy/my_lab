@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Регістрація</title>
+	<link type = "text/css" rel="stylesheet" href="stil.css">
+	<script type="text/javascript" src="script.js"></script>
+	<script type="text/javascript" src="script2.js"></script>
+</head>
+<body background="Web/fon.gif" style="background-size:cover" width="100%" height="100%" link="#ffffff" vlink="#ffffff" alink="#ffffff">
+<HEADER align="center"> <font face="Segoe print" size="30"  color="#ffffff" ><big>  Регістрація  </big></HEADER>
+	<img src="my0.png" style=" top: 20px; left:20px; position: absolute" >
+		<section class="navigation"> <!--class="navigation"--> 
+		<li><a href="home.html" >Головна</a></li>
+		<li><a href="recept.html" >Рецепти</a></li>
+		<li><a href="recom.html" >Рекомендуємо</a></li>
+		<li><a href="login.html" >Вхід</a></li>
+		<li><a href="autor.html" >Про автора</a></li>
+	</section>
+<font face="Segoe print" size="2"  color="#ffffff">
+	<table cols="2"  border="0"  cellpadding="5" cellspacing="0" width="30%" style="top: 150px;  left: 400px; line-height: 2.5; position: absolute">
+		<form method="post" class="contact_form" method="post" name="contact_form">
+		<tr>
+			<td align="right"><font face="Segoe print" size="2" >E-mail*:</font></td>
+			<td align="left"><input type="email"  id = "mail" name="email"  required>
+		</td>
+		<tr>
+			<td align="right"><font face="Segoe print" size="2" >Логін*:</font></td>
+			<td align="left"><input id="username" type="text" title="Логін"  required></td>
+		</tr>
+		<tr>
+			<td align="right"><font face="Segoe print" size="2" >Пароль*:</font></td>
+			<td align="left"><input id="password" type="password" title="Пароль"  required/></td>
+		</tr>
+		<tr>
+			<td align="right"><input type="reset" value="Відмінити"></td>
+			<td align="left"><input type="submit" value="Підтвердити" onClick="Reg()"></td>
+		</tr>
+	</table>
+</form>
+<div id ="next"> </div>
+<script type="text/javascript">
+    if ( get_cookie ("login") != 0 ) 
+    location.href = "koment.html"; 
+</script>
+<font face="Segoe print" size="5" ><a href="home.html"><p align="left" >&#171Повернутись</p></a>
+</html>
